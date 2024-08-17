@@ -1,0 +1,1414 @@
+.hor-line(@length) {
+  div {
+    border-top: 1px solid rgb(255, 255, 0);
+    margin-bottom: 4px;
+    width: @length;
+    box-shadow: 0 -2px 5px rgba(255, 255, 0, 0.5), 0 2px 5px rgba(255, 255, 0, 0.5);
+  }
+}
+.blured-line(){
+  filter: blur(3px);
+  opacity: 50%;
+}
+@media screen and (max-width: 1300px) {
+  .easy-rent-container {
+    .main-image {
+      .main-image-smoke {
+        top: unset;
+        bottom: 14%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .easy-rent-container {
+    margin-bottom: 200px;
+
+    .main-image {
+      top: 150px
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .advantages-container {
+    .advantages-elements {
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  //Карточки авто - дым
+  .easy-rent-container {
+    margin-bottom: 300px;
+
+    .main-image {
+      top: 250px;
+      left: unset;
+
+      .main-image-smoke {
+        margin-left: 40%;
+      }
+    }
+  }
+
+  .assortiment-container {
+    .assortiment-cars {
+      .assortiment-car {
+        .assortiment-car-image-container {
+          .car-left-smoke {
+            top: -10%;
+          }
+
+          .car-right-smoke {
+            top: -10%;
+          }
+        }
+      }
+    }
+  }
+
+  .info-container {
+    .info-element-2 {
+      .info-element-car {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .geo-wide-container {
+    background-position: center top;
+
+    .geo-container {
+      .geo-monaco {
+        grid-column: 2/4;
+        margin-left: unset;
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      grid-template-columns: 115px  285px 285px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .feedback-container {
+    .feedback-elements {
+      //overflow: hidden;
+      width: 99%;
+      margin: 0;
+
+      .feedback-element {
+        margin: 0 65px;
+      }
+    }
+  }
+}
+
+//Slick
+@media screen and (max-width: 956px) {
+  .header-container {
+    .logo {
+      margin-right: 50px;
+    }
+  }
+
+  .easy-rent-container {
+
+    margin-bottom: 100px;
+    grid-template-columns:1fr;
+
+    .main-header {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    .discount-text {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+
+    .main-image {
+      grid-row: 3/4;
+      grid-column: 1/2;
+      position: relative;
+      top: 0;
+      margin-left: -20px;
+      margin-right: 0;//-50px
+
+      .main-image-fon{
+        left: 6%;
+        bottom: 29%;
+      }
+      .main-image-smoke {
+        bottom: 30%;
+        margin-left: 35%;
+        right: -13px;
+      }
+
+      .main-image-circle {
+        bottom: 8px;
+        left: -19px;
+        margin-right: 0;
+      }
+
+      .main-image-car {
+        min-width: 289px;
+        //margin-left: 15%;
+        margin-right: 13%;
+        bottom: 12.52%;
+        margin-left: 27px;
+      }
+    }
+  }
+
+  .info-container {
+    .info-element-1 {
+      grid-row-gap: 35px;
+
+      .info-element-data {
+        max-width: 490px;
+        grid-column: 1/3;
+      }
+
+      .info-element-man {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        justify-self: end;
+
+      }
+    }
+
+    .info-element-2 {
+      display: grid;
+      grid-template-columns: auto 405px;
+
+      .h-line {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      .info-element-header {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+
+      .info-element-text {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-bottom: 30px;
+      }
+
+      .info-element-car {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin-left: -8%;
+        margin-right: -9%;
+        justify-self: start;
+
+        .info-image-car {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .advantages-container {
+    .advantages-header {
+      text-align: center;
+    }
+
+    .advantages-elements {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+
+  .geo-wide-container {
+    background-position: center top;
+    //background-size: contain;
+    .geo-container {
+      .geo-header {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+
+      .geo-monaco {
+        grid-row: 1/6;
+        grid-column: 1/4;
+        justify-self: end;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 856px) {
+
+  .feedback-container {
+    .feedback-elements {
+      .feedback-element {
+        margin: 0 40px;
+      }
+    }
+  }
+
+  .geo-wide-container {
+    .geo-container {
+      .geo-header {
+      }
+
+      .geo-monaco {
+        .geo-point {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .geo-lacondamine {
+          left: 25.2%;
+          top: 61.9%;
+        }
+
+        .geo-fontvieille {
+          left: 12%;
+          bottom: 12%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 788px) {
+  body {
+    background-position: 6% 0;
+  }
+
+  .easy-rent-container {
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    .main-image {
+      margin-right: -50px;
+    }
+    .rent-header {
+      padding-top: 45px;
+    }
+  }
+
+  .info-container {
+    padding-bottom: 110px;
+  }
+
+  .advantages-container {
+    padding-top: 109px;
+
+    .advantages-header {
+      margin-bottom: 40px;
+    }
+
+    .advantages-elements {
+      gap: 38px;
+    }
+  }
+
+  .feedback-container {
+    padding-bottom: 100px;
+    padding-top: 0;
+  }
+
+  .geo-wide-container {
+    padding-bottom: 75px;
+    background-position: center 100px;
+    background-size: contain;
+
+    .geo-container {
+      .geo-monaco {
+        grid-row: 2/6;
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+
+      .footer-worktime {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+
+      .footer-contacts {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+
+      .footer-social {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: end;
+        margin-right: 175px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .info-container {
+    .info-header {
+
+      h2 {
+        max-width: 374px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+//Карточки авто
+@media screen and (max-width: 690px) {
+  .header-container {
+    .logo {
+      margin-right: 15px;
+    }
+  }
+  .assortiment-container {
+    .assortiment-header {
+      margin-bottom: 64px;
+    }
+
+    .assortiment-cars {
+      .assortiment-car {
+        .assortiment-car-image-container {
+          margin-bottom: 40px;
+        }
+
+        .assortiment-car-image-container {
+          .car-left-smoke {
+            top: -10%;
+            left: -15px;
+          }
+
+          .car-right-smoke {
+            top: -10%;
+            left: -15px;
+          }
+        }
+
+        .car-data {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+
+          .car-text {
+            gap: 12px;
+
+            .car-name {
+              font-size: 18px;
+            }
+
+            .car-price {
+              font-size: 16px;
+            }
+          }
+
+          .button {
+            font-size: 18px;
+            padding: 16px;
+            margin-top: 5px;
+            width: 200px;
+
+          }
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    top: 37.5%;
+  }
+
+  .feedback-container {
+    .feedback-elements {
+      .feedback-element {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 652px) {
+ .container{
+   overflow: hidden;
+ }
+  .advantages-container{
+    overflow: visible;
+  }
+
+}
+
+//Основной поинт
+@media screen and (max-width: 610px) {
+  header {
+    .header-container {
+      align-items: center;
+
+      .header-burger {
+        display: flex;
+      }
+      .header-menu {
+        display: none;
+      }
+      .menu-opened{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: rgba(52,52,54,0.52);
+        position: fixed;
+        align-items: start;
+        justify-content: end;
+        left: 0;
+        top: 0;
+        ul{
+          position: relative;
+          flex-grow: 0;
+          display: flex;
+          background: rgb(24,25,26);
+          padding-bottom: 43px;
+
+          width: 249px;
+          box-sizing: border-box;
+          flex-direction: column;
+          gap: 21px;
+          a{
+            margin-left: 20px;
+          }
+          .h-line {
+            display: block;
+            .hor-line(22px);
+            position: absolute;
+
+            &:first-child {
+              left: 0;
+              top: 16px;
+            }
+
+            &:last-child {
+              right: 0;
+              bottom: 16px;
+            }
+          }
+          .smallmenu-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 38px 22px 37px 20px ;
+            margin-bottom: 20px;
+            border-bottom: 1px solid black;
+            .smallmenu-header-text{
+              font-size: 25px;
+              font-family: "Bebas Neue", sans-serif;
+              color: rgb(248, 229, 165);
+              line-height: 1;
+              text-align: left;
+              width: 50px;
+            }
+            .close-btn{
+              display: flex;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .easy-rent-container {
+
+      overflow: hidden;
+
+    .main-header {
+      padding-top: 45px;
+      margin-bottom: 30px;
+
+      h1 {
+        font-size: 35px;
+        line-height: 1.143;
+      }
+
+      .first-header {
+        display: none;
+      }
+
+      .alt-header {
+        display: block;
+        max-width: 394px;
+      }
+
+    }
+
+    .discount-text {
+      font-size: 16px;
+    }
+    .main-image{
+      .main-image-fon{
+        display: none;
+      }
+    }
+
+    position: relative;
+  }
+
+  .info-container {
+    padding-bottom: 105px;
+
+    .info-header {
+      margin-bottom: 33px;
+
+      h2 {
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    .info-element-1 {
+      margin-bottom: 34px;
+
+      .info-element-data {
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: 60px;
+        padding-top: 0;
+
+        .h-line {
+          grid-row: 1/2;
+          grid-column: 1/2;
+          margin-right: 0;
+          .hor-line(27px);
+        }
+
+        .info-element-header {
+          grid-row: 1/2;
+          grid-column: 2/3;
+          margin-bottom: 0;
+          font-size: 18px;
+          line-height: 1.278;
+        }
+
+        .info-element-text {
+          grid-row: 2/3;
+          grid-column: 1/3;
+          font-size: 14px;
+          line-height: 1.357;
+        }
+      }
+    }
+
+    .info-element-2 {
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 66px;
+
+      .h-line {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: unset;
+        .hor-line(27px);
+      }
+
+      .info-element-header {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        font-size: 18px;
+        line-height: 1.278;
+      }
+
+      .info-element-text {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        margin-bottom: 36px;
+        font-size: 14px;
+        line-height: 1.357;
+      }
+
+    }
+  }
+
+  .cockpit-wide-container {
+    padding: 0;
+    background-image: none;
+    overflow: visible;
+
+
+    .cockpit-container-fon {
+      img {
+        display: none;
+      }
+
+      background-image: url("../../images/cockpit-fon-sm.png");
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      filter: blur(141px);
+    }
+
+    .rent-container {
+      margin: 0;
+      justify-content: center;
+      background-color: rgb(19, 20, 21);
+      padding-top: 47px;
+      padding-bottom: 57px;
+      box-shadow: 0 7px 22px 2px rgba(0, 0, 0, 1);
+
+      .cockpit-rent-frame {
+        padding: 0;
+        background-image: none;
+
+        .rent-header {
+          margin-bottom: 29px;
+          display: flex;
+          justify-content: center;
+
+          h3 {
+            font-size: 25px;
+            line-height: 1.28;
+            text-align: center;
+            max-width: 255px;
+          }
+        }
+
+        .rent-text {
+          margin-bottom: 33px;
+        }
+
+        .rent-action {
+          .button {
+            width: 200px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  .advantages-container {
+    margin-bottom: 60px;
+    overflow: hidden;
+    .advantages-header {
+      h2 {
+        font-size: 25px;
+        text-align: left;
+      }
+    }
+
+    .advantages-elements {
+      gap: 27px;
+
+      .advantages-element {
+        width: 100%;
+        gap: 10px;
+
+        &:nth-child(1) {
+          .element-header-group {
+            .adv-element-image {
+              justify-content: start;
+              margin-right: -3px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .adv-element-text {
+            p {
+              max-width: 250px;
+
+              &:last-child {
+                max-width: 206px;
+              }
+            }
+          }
+
+          .element-header-group {
+            .adv-element-image {
+              .adv-element-image-fon {
+                display: none;
+              }
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          margin-top: 2px;
+
+          .element-header-group {
+            margin-bottom: 5px;
+
+            .adv-element-image {
+              .adv-element-image-fon {
+                display: none;
+              }
+            }
+          }
+
+        }
+
+        .element-header-group {
+          justify-content: left;
+          gap: 13px;
+
+          .adv-element-header {
+            font-size: 18px;
+            max-width: 194px;
+          }
+
+        }
+
+        .adv-element-text {
+          font-size: 14px;
+          line-height: 1.357;
+          max-width: 270px;
+          gap: 8px;
+        }
+      }
+    }
+  }
+
+  .assortiment-container {
+    padding-bottom: 100px;
+
+    .assortiment-header {
+      left: 16px;
+
+      h2 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .feedback-container {
+    padding-bottom: 65px;
+
+    .feedback-header {
+      padding-bottom: 40px;
+
+      h2 {
+        font-size: 35px;
+        line-height: 1.287;
+        text-align: left;
+      }
+    }
+
+    .feedback-elements {
+      padding-bottom: 26px;
+      width: 100%;
+
+      .feedback-element {
+        margin: 0 1%;
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      grid-template-columns: 1fr;
+      grid-row-gap: 32px;
+      padding-top: 40px;
+      padding-bottom: 48px;
+
+      .footer-logo {
+        padding-top: unset;
+      }
+
+      .footer-worktime {
+        gap: 20px;
+
+        .worktime-header {
+          color: rgb(248, 229, 165);
+        }
+
+        .worktime-data {
+          gap: 13px;
+        }
+      }
+
+      .footer-contacts {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        justify-self: unset;
+        align-self: unset;
+        gap: 10px;
+
+        .contacts-address {
+          margin-left: 4px;
+        }
+
+        .contacts-header {
+          color: rgb(248, 229, 165);
+          margin-bottom: 16px;
+        }
+      }
+
+      .footer-social {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        align-self: unset;
+        justify-self: unset;
+        margin-right: unset;
+      }
+    }
+  }
+
+  .top-up{
+    display: flex;
+  }
+}
+
+//Slick
+@media screen and (max-width: 480px) {
+  .geo-wide-container {
+    .geo-container {
+      .geo-monaco {
+        .geo-montecarlo {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .info-container {
+    .info-element-1 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .feedback-container {
+    .feedback-elements {
+      .feedback-element {
+        margin: 0 0.7%;
+      }
+    }
+  }
+
+  .geo-wide-container {
+    .geo-container {
+      font-size: 14px;
+      grid-row-gap: 30px;
+
+      .geo-header {
+        margin-bottom: 18px;
+
+        h3 {
+          font-size: 30px;
+        }
+      }
+
+      .geo-monaco {
+        .geo-montecarlo {
+          top: 40%;
+
+          img {
+            order: 1;
+          }
+        }
+
+        .geo-lacondamine {
+          align-items: center;
+          left: 19.2%;
+          top: 62.1%;
+        }
+
+        .geo-hint {
+          left: 21%;
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 459px) {
+
+  .logo {
+    width: 95px;
+    height: 52px;
+    margin-top: 1px;
+    background-image: url("../../images/logo-320.png");
+  }
+
+  header {
+    .header-container {
+      padding-top: 22px;
+    }
+  }
+
+  .easy-rent-container {
+    margin-bottom: 60px;
+    padding-bottom: 0px;
+
+    .add-line {
+      display: flex;
+      position: absolute;
+      left: 19px;
+      height: 47px;
+      border-color: rgb(255, 222, 70);
+      box-shadow: none;
+      top: 230px;
+    }
+
+    .main-header {
+      margin-bottom: 15px;
+
+      h1 {
+        font-size: 35px;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .discount-text {
+      max-width: 270px;
+      margin-bottom: 20px;
+
+      .main-line {
+        .blured-line();
+      }
+    }
+
+    .main-image {
+      margin-left: -20px;
+      margin-right: -50px;
+
+
+      .main-image-circle {
+        bottom: 4px;
+        left: -25px;
+        margin-right: 21px;
+      }
+
+      .main-image-smoke {
+        bottom: 24%;
+        margin-left: 30%;
+        right: -21px;
+      }
+
+      .main-image-car {
+        bottom: 13.52%;
+        margin-left: 23px;
+      }
+
+    }
+  }
+
+  .cockpit-wide-container {
+    .rent-container {
+      .cockpit-rent-frame {
+        .rent-action {
+          flex-direction: column;
+          justify-content: unset;
+          align-items: center;
+          row-gap: 27px;
+        }
+      }
+    }
+  }
+
+  .assortiment-container {
+    .assortiment-cars {
+      .assortiment-car {
+        .assortiment-car-image-container {
+          .car-left-smoke {
+            top: 13%;
+            left: 2px;
+            margin-right: 42.76%;
+          }
+
+          .car-right-smoke {
+            right: 2%;
+            margin-left: 32.68%;
+            top: 4%;
+            left: 9%;
+          }
+
+          .car-top-circle {
+            top: 66.6%;
+            left: 4.4%;
+            margin-right: 5%;
+          }
+
+          .car-bottom-circle {
+            left: 4.25%;
+            top: 66%;
+            margin-right: 5%;
+          }
+
+          .svj-green-car {
+            bottom: -17%;
+            left: 7%;
+            margin-right: 2.31%;
+          }
+
+          .svj-yellow-car {
+            bottom: -20%;
+            left: 3%;
+            margin-right: 6.5%;
+          }
+
+          .s-roadster-car {
+            bottom: -17%;
+            left: 7%;
+            margin-right: 2.31%;
+          }
+
+          .svj-roadster-car {
+            bottom: -20%;
+            left: 3%;
+            margin-right: 6.5%;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      grid-row-gap: 30px;
+      font-size: 13px;
+
+      .footer-logo {
+        margin-top: 0;
+      }
+
+      .footer-worktime {
+        max-width: 262px;
+      }
+
+      .footer-contacts {
+        margin-bottom: 2px;
+
+        .contacts-header {
+          margin-top: 7px;
+        }
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .easy-rent-container{
+   .main-header{
+     .alt-header {
+       display: block;
+       max-width: 350px;
+     }
+   }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .easy-rent-container {
+
+    .add-line {
+      top: 230px;
+    }
+  }
+
+  .feedback-container {
+    .feedback-elements {
+      .feedback-element {
+        margin: 0 15px;
+      }
+    }
+
+    .feedback-control {
+      gap: 10px;
+
+      .slick-dots {
+        gap: 10px;
+      }
+    }
+  }
+
+  .assortiment-container {
+    .assortiment-cars {
+      .assortiment-car {
+        margin-right: 15px;
+        margin-left: 15px;
+
+        .car-data {
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .form-button{
+    width: 200px;
+    padding: 17px 15px;
+  }
+  .error-msg {
+    color: red;
+    font-size: 13px;
+  }
+  .modal-window{
+    .order-window{
+      width: 100%;
+      padding: 90px 15px;
+      gap: 25px; //41
+      .order-call-header{
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+        padding-bottom: 5px;
+      }
+      .order-car-header{
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+        padding-bottom: 5px;
+      }
+      .order-car-details{
+      font-size: 16px;
+      }
+      .order-form{
+        .order-group-header{
+          margin-bottom: 0;
+          margin-top: 15px;
+          font-size: 14px;
+          &:first-child{
+            margin-top: 0;
+          }
+        }
+        .order-acception{
+          max-width: 290px;
+        }
+      }
+      .close-btn{
+        right: 19px;
+        top: 39px;
+        display: flex;
+      }
+      .add-line{
+        display: flex;
+          left: 0;
+          top: 48px;
+      }
+      .h-line{
+        .hor-line(22px);
+        &:first-child{
+          top: 42px;
+          .blured-line();
+        }
+        &:last-child{
+          bottom: 47px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .easy-rent-container {
+    .add-line {
+      top: 256px;
+    }
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .easy-rent-container {
+    .add-line {
+      top: 256px;
+    }
+  }
+  .info-container{
+    .info-element-2{
+      .info-element-car{
+        margin-right: -11%;
+      }
+    }
+  }
+  .geo-wide-container {
+    .geo-container {
+      .geo-monaco {
+        margin-top: 58px;
+        margin-left: 0;
+        margin-right: 35px;
+        width: 271px;
+        height: 260px;
+        justify-self: center;
+
+        .geo-lacondamine {
+          left: 29.2%;
+          top: 61.1%;
+
+          span {
+            display: none;
+          }
+        }
+
+        .geo-fontvieille {
+          display: none;
+        }
+
+        .geo-hint {
+          left: 20%;
+          bottom: 42.4%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .assortiment-container {
+    padding-top: 100px;
+    padding-bottom: 67px;
+
+    .assortiment-header {
+      margin-bottom: 50px;
+    }
+
+    .assortiment-cars {
+      .assortiment-car {
+        &:nth-child(5) {
+          .car-data {
+            .car-text {
+              gap: 0;
+              margin-bottom: -10px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-image: url("../../images/road-fon-320.png");
+  }
+
+  .hard-work {
+    display: flex;
+    width: 20px;
+
+  }
+
+  .info-container {
+    .info-element-1 {
+      margin-bottom: 10px;
+
+      .info-element-man {
+        margin-right: 0;
+        margin-left: 10%;
+
+        .info-image-man {
+          margin-right: 53.61%;
+        }
+
+        .info-image-road {
+          right: -4.5%;
+          bottom: 6%;
+          margin-left: 38.13%;
+        }
+      }
+    }
+
+    .info-element-2 {
+      .info-element-car {
+        margin-left: -8%;
+        margin-right: -11%;
+
+        .info-image-car-fon {
+          display: none;
+        }
+
+        .info-image-car {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .info-element-text {
+        margin-bottom: 19px;
+        //width: 290px;
+      }
+    }
+  }
+
+  .feedback-container {
+    .feedback-header {
+      max-width: 180px;
+    }
+
+    .feedback-elements {
+      .feedback-element {
+        margin-left: 1px;
+        margin-right: 1px;
+        width: 288px;
+      }
+    }
+  }
+
+  .geo-wide-container {
+    background-image: url("../../images/geo/world_map_320.png");
+    background-position: center 83px;
+
+    .geo-container-fon {
+      display: none;
+    }
+
+    .geo-container {
+      .geo-monaco {
+        margin-left: 7px;
+        margin-right: 0;
+        justify-self: left;
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      grid-row-gap: 30px;
+      font-size: 13px;
+
+      .footer-logo {
+        margin-top: 0;
+      }
+
+      .footer-worktime {
+        max-width: 262px;
+      }
+
+      .footer-contacts {
+        margin-bottom: 2px;
+
+        .contacts-header {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
