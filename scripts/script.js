@@ -202,7 +202,7 @@ window.onload = function () {
         }
     } //Функция закрытие формы заказа машины
 //Обработка форм
-    const url = 'https://testologia.site/checkout';
+    const url = 'https://testologia.ru/checkout';
     const callForm = $('#callForm');
     const orderForm = $('#orderForm');
     const callSuccessText = $('#callSuccessText');
@@ -260,16 +260,16 @@ window.onload = function () {
             .done(function (message) {
                 closeLoader();
                 if (message && message.hasOwnProperty('success')) {
-                    if (message.success === 1) {
+                    if (message.success === 0) {
                         callForm.hide();
                         callSuccessText.css('display', 'flex');
-                    } else if (message.success === 0) {
-                        alert('Извините, Вы внесены в черный список клиентов!')
+                    } else if (message.success === 1) {
+                        alert('Es tut uns leid, Sie stehen auf der schwarzen Liste!')
                     } else {
-                        alert('Ошибка. Непредвиденный ответ от сервера. Повторите пожалуйста попытку.');
+                        alert('Fehler. Unerwartete Antwort vom Server. Bitte versuchen Sie es erneut.');
                     }
                 } else {
-                    alert('Произошла ошибка на сервере. Повторите запрос позже');
+                    alert('Auf dem Server ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal');
                 }
             });
     });
@@ -349,15 +349,15 @@ window.onload = function () {
         if (orderStartDate.val() < currentDate) {
             makeError(orderStartDate);
             err = true;
-            errMSG = 'Начальная дата не должна быть меньше текущей.';
+            errMSG = 'Das Startdatum darf nicht kleiner sein als das aktuelle Datum.';
         }
         if (orderStartDate.val() > orderEndDate.val()) {
             makeError(orderEndDate);
             err = true;
             if (errMSG.length > 0) {
-                errMSG += ' Начальная дата не должна быть больше конечной.';
+                errMSG += ' Das Startdatum darf nicht nach dem Enddatum liegen.';
             } else {
-                errMSG = 'Начальная дата не должна быть больше конечной.';
+                errMSG = 'Das Startdatum darf nicht nach dem Enddatum liegen.';
             }
         }
         if (err) {
@@ -392,18 +392,21 @@ window.onload = function () {
             .done(function (message) { //результат запроса в переменную message уже пропарсеный
                 closeLoader();
                 if (message && message.hasOwnProperty('success')) {
-                    if (message.success === 1) {
+                    if (message.success === 0) {
                         orderForm.hide();
                         orderDetails.hide();
                         orderSuccessText.css('display', 'flex');
-                    } else if (message.success === 0) {
+                    } else if (message.success === 1) {
                         alert('Извините, Вы внесены в черный список клиентов!')
+                        orderForm.hide();
+                        orderDetails.hide();
+                        orderSuccessText.css('display', 'flex');
                     } else {
-                        alert('Ошибка. Непредвиденный ответ от сервера. Повторите пожалуйста попытку.');
+                        alert('Fehler. Unerwartete Antwort vom Server. Bitte versuchen Sie es erneut.');
                     }
 
                 } else {
-                    alert('Произошла ошибка на сервере. Повторите запрос позже');
+                    alert('Auf dem Server ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal');
                 }
             });
     })
